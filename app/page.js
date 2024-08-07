@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import { AppBar, Toolbar, Box, Stack, Typography, Button, Modal, TextField } from '@mui/material'
 import { firestore } from '@/firebase'
 import {
@@ -114,12 +113,6 @@ export default function Home() {
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Inventory Tracker
           </Typography>
-          <Link href="/" passHref>
-            <Button sx={{ color: 'white' }}>Tracker</Button>
-          </Link>
-          <Link href="/about" passHref>
-            <Button sx={{ color: 'white' }}>About</Button>
-          </Link>
         </Toolbar>
       </AppBar>
       <Modal
